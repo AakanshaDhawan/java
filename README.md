@@ -1,2 +1,2 @@
 # java programs
-1) Reservation and Cancellation System
+Some basic java programs for college project including Inheritence,Multithreading,Exceptions etc in Java
