@@ -13,21 +13,21 @@ import java.io.InputStreamReader;
  *
  * @author aakansha
  */
-public class add {
-    public static void main(String aa[])throws IOException
+public class minarr {
+     public static void main(String aa[])throws IOException
     {
         int n;
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.println("enter the size");
         n=Integer.parseInt(br.readLine());
-        int ar[]=new int[n],sum=0;
+        int ar[]=new int[n],min=0;
         for(int i=0;i<n;i++)
         {
             System.out.println("enter the element");
             ar[i]=Integer.parseInt(br.readLine());
-            sum=sum+ar[i];
+            if(min>ar[i])
+                min=ar[i];
         }
-        System.out.println("sum of array"+sum);
-    }  
-    
+        System.out.println("minimum element of array"+min);
+    }    
 }

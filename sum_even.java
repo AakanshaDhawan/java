@@ -13,21 +13,19 @@ import java.io.InputStreamReader;
  *
  * @author aakansha
  */
-public class add {
-    public static void main(String aa[])throws IOException
+public class sum_even {
+      public static void main(String aa[])throws IOException
     {
-        int n;
+        int n, sum=0;
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("enter the size");
-        n=Integer.parseInt(br.readLine());
-        int ar[]=new int[n],sum=0;
-        for(int i=0;i<n;i++)
+        for(int i=0;i<10;i++)
         {
-            System.out.println("enter the element");
-            ar[i]=Integer.parseInt(br.readLine());
-            sum=sum+ar[i];
+            System.out.println("enter the number");
+            n=Integer.parseInt(br.readLine());
+            if(n%2==0)
+                sum=sum+n;
         }
-        System.out.println("sum of array"+sum);
+        System.out.println("sum of even numbers is:"+sum);
     }  
     
 }

@@ -13,21 +13,22 @@ import java.io.InputStreamReader;
  *
  * @author aakansha
  */
-public class add {
-    public static void main(String aa[])throws IOException
+public class fact {
+    static int fac(int n)
     {
-        int n;
+        if (n==1)
+            return 1;
+        else
+            return (n*fac(n-1));
+    }
+  public static void main(String aa[])throws IOException
+    {
+        int n,f;
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("enter the size");
+        System.out.println("enter the number");
         n=Integer.parseInt(br.readLine());
-        int ar[]=new int[n],sum=0;
-        for(int i=0;i<n;i++)
-        {
-            System.out.println("enter the element");
-            ar[i]=Integer.parseInt(br.readLine());
-            sum=sum+ar[i];
-        }
-        System.out.println("sum of array"+sum);
+        System.out.println("factorial is:"+fac(n));
     }  
+
     
 }

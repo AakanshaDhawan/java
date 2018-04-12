@@ -13,8 +13,8 @@ import java.io.InputStreamReader;
  *
  * @author aakansha
  */
-public class add {
-    public static void main(String aa[])throws IOException
+public class avg_arr {
+     public static void main(String aa[])throws IOException
     {
         int n;
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -27,7 +27,6 @@ public class add {
             ar[i]=Integer.parseInt(br.readLine());
             sum=sum+ar[i];
         }
-        System.out.println("sum of array"+sum);
-    }  
-    
+        System.out.println("avg of array"+(sum/n));
+    } 
 }

@@ -8,26 +8,28 @@ package programs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import static programs.fact.fac;
 
 /**
  *
  * @author aakansha
  */
-public class add {
+public class prime {
     public static void main(String aa[])throws IOException
     {
-        int n;
+        int n,f=0;
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("enter the size");
+        System.out.println("enter the number");
         n=Integer.parseInt(br.readLine());
-        int ar[]=new int[n],sum=0;
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n/2;i++)
         {
-            System.out.println("enter the element");
-            ar[i]=Integer.parseInt(br.readLine());
-            sum=sum+ar[i];
+            if(n%i==0)
+                f=1;
         }
-        System.out.println("sum of array"+sum);
+        if (f==0)
+            System.out.println("prime no");
+        else
+            System.out.println("not prime");
     }  
     
 }
